@@ -1,18 +1,20 @@
-# classifier-model
+# Machine Learning Pipeline
 
-A machine learning classifier model for text classification tasks.
+A complete machine learning pipeline for binary classification using synthetic data.
 
 ## Overview
 
-This project implements a text classifier that can categorize text documents into predefined classes. The model uses natural language processing techniques to analyze and classify text data.
+This project implements a machine learning pipeline that generates synthetic datasets, trains a Random Forest classifier, and evaluates model performance. The pipeline includes data generation, CSV I/O operations, model training with scikit-learn, model persistence, and comprehensive evaluation metrics.
 
 ## Features
 
-- Text preprocessing and feature extraction
-- Multiple classification algorithms support
-- Model training and evaluation
-- Prediction capabilities for new text data
-- Performance metrics and visualization
+- Synthetic dataset generation with configurable sample size
+- CSV data persistence and loading capabilities
+- Random Forest classifier implementation
+- Train/test data splitting
+- Model serialization using pickle
+- Performance evaluation with accuracy scores and classification reports
+- Complete pipeline automation from data generation to model evaluation
 
 ## Setup python3 virtual environment
 
