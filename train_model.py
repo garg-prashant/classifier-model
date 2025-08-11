@@ -30,7 +30,7 @@ def generate_dataset(num_samples=1000):
     Generate a synthetic dataset for binary classification.
     
     Creates a dataset with two features (feature_1, feature_2) and a binary label.
-    The classification rule is: label = 1 if feature_1 + feature_2 > 0, else 0.
+    The classification rule is: label = 1 if feature_1 + feature_2 > 1, else 0.
     
     Args:
         num_samples (int): Number of samples to generate. Defaults to 1000.
@@ -41,11 +41,11 @@ def generate_dataset(num_samples=1000):
     """
     dataset = []
     for i in range(num_samples):
-        feature_1 = random.uniform(-10, 10)
-        feature_2 = random.uniform(-10, 10)
+        feature_1 = random.uniform(0, 1)
+        feature_2 = random.uniform(0, 1)
         
-        # Simple classification rule: if feature_1 + feature_2 > 0, label is 1, else 0
-        label = 1 if feature_1 + feature_2 > 0 else 0
+        # Simple classification rule: if feature_1 + feature_2 > 1, label is 1, else 0
+        label = 1 if feature_1 + feature_2 > 1 else 0
         
         dataset.append({
             'feature_1': feature_1,
